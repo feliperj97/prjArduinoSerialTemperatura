@@ -9,7 +9,7 @@ float temperatura = 0;
 void setup() {
   Serial.begin(9600);
   dht.begin();
-  Serial.println("Iniciando leitura...");
+  //Serial.println("Iniciando leitura...");
 }
 
 void loop() {
