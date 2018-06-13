@@ -14,18 +14,12 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  delay(1000);
-  temperatura = dht.readTemperature();
+    temperatura = dht.readTemperature();
  // umidade = dht.readHumidity();
-
-  enviaDadosSerial();
+   enviaDadosSerial();
+   delay(10000);
 
 }
 void enviaDadosSerial(){
-   // Serial.print(tipoDado);
-    //Serial.print(separador);
     Serial.println(temperatura);
-    //Serial.print(separador);
-    //Serial.print(umidade);
-    //Serial.println();
   }
